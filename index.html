@@ -1,107 +1,136 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>ICICI Bank - Welcome</title>
+    <meta charset="UTF-8" />
+    <title>Delicious Bites - Food Restaurant</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background: #f4f4f4;
-        }
-        header {
-            background: #ff6a00;
-            color: #fff;
-            padding: 16px 0;
-            text-align: center;
-        }
-        nav {
-            background: #fff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.06);
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 10px;
-            overflow: hidden;
-        }
-        nav li {
-            float: left;
-            margin-right: 24px;
-        }
-        nav li a {
-            text-decoration: none;
-            color: #ff6a00;
-            font-weight: bold;
-        }
-        nav li a:hover {
+            background: #fff8f0;
             color: #333;
         }
-        .content {
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #ffe4e1;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #ff6347;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .welcome {
+            max-width: 700px;
+            margin: 30px auto;
+            text-align: center;
+        }
+        .welcome h2 {
+            font-size: 2em;
+            color: #ff6347;
+        }
+        .menu {
             max-width: 900px;
             margin: 30px auto;
-            padding: 20px;
-            background: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .menu-item {
+            background: white;
+            border: 1px solid #ffdbd6;
             border-radius: 8px;
+            width: 250px;
+            margin: 15px;
+            padding: 15px;
+            box-shadow: 2px 2px 8px #ffdbd6;
+            transition: transform 0.3s ease;
         }
-        .buttons {
-            margin-top: 24px;
+        .menu-item:hover {
+            transform: scale(1.05);
         }
-        .btn {
-            background: #ff6a00;
-            color: #fff;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 4px;
-            margin-right: 10px;
-            text-decoration: none;
-            font-size: 16px;
-            cursor: pointer;
+        .menu-item img {
+            max-width: 100%;
+            border-radius: 6px;
         }
-        .btn:hover {
-            background: #e65c00;
+        .menu-item h3 {
+            color: #ff6347;
+            margin: 10px 0 5px;
+        }
+        .menu-item p {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .menu-item .price {
+            font-weight: bold;
+            color: #d84315;
+            margin-top: 10px;
+            font-size: 1.1em;
         }
         footer {
-            background: #232323;
-            color: #fff;
             text-align: center;
-            padding: 12px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            background: #ff6347;
+            color: white;
+            padding: 15px 0;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>ICICI Bank</h1>
-        <p>Your Trusted Banking Partner</p>
+        Delicious Bites
     </header>
     <nav>
-        <ul>
-            <li><a href="#">Personal Banking</a></li>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">NRI</a></li>
-            <li><a href="#">Investments</a></li>
-            <li><a href="#">Customer Care</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
+        <a href="#welcome">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
     </nav>
-    <div class="content">
-        <h2>Welcome to ICICI Bank</h2>
-        <p>
-            Secure. Simple. Swift.<br>
-            Explore our wide range of financial products and services designed to meet all your personal and business banking needs.
-        </p>
-        <div class="buttons">
-            <a class="btn" href="#">Open an Account</a>
-            <a class="btn" href="#">Net Banking</a>
-            <a class="btn" href="#">Find an ATM</a>
+    
+    <section id="welcome" class="welcome">
+        <h2>Welcome to Delicious Bites!</h2>
+        <p>Enjoy our mouth-watering delicacies prepared with fresh ingredients and love. Explore our menu and find your favorite dish today!</p>
+    </section>
+    
+    <section id="menu" class="menu">
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/250x150?text=Pizza" alt="Pizza" />
+            <h3>Margherita Pizza</h3>
+            <p>A delightful pizza topped with fresh tomatoes, mozzarella cheese, and basil.</p>
+            <div class="price">$9.99</div>
         </div>
-    </div>
-    <footer>
-        &copy; 2025 ICICI Bank Ltd. All Rights Reserved.
+        
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/250x150?text=Burger" alt="Burger" />
+            <h3>Classic Cheeseburger</h3>
+            <p>Juicy beef patty with cheddar cheese, lettuce, tomato, and our special sauce.</p>
+            <div class="price">$7.99</div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/250x150?text=Pasta" alt="Pasta" />
+            <h3>Italian Pasta</h3>
+            <p>Penne pasta in creamy Alfredo sauce garnished with parsley and parmesan.</p>
+            <div class="price">$8.99</div>
+        </div>
+    </section>
+    
+    <footer id="contact">
+        Contact Us: <a href="mailto:info@deliciousbites.com" style="color:#fff;">info@deliciousbites.com</a> | Phone: +919975414167
+        <br />
+        &copy; 2025 Delicious Bites. All Rights Reserved. Owned by [translate:रोहित].
     </footer>
 </body>
 </html>
